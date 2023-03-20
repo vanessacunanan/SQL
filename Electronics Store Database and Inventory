@@ -1,0 +1,21 @@
+CREATE TABLE electronics_store (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, quantity INTEGER, brand TEXT);
+
+INSERT INTO electronics_store VALUES (1, "Smart Watch", 199, 20, "Apple");
+INSERT INTO electronics_store VALUES (2, "Smart Watch", 250, 18, "Android");
+INSERT INTO electronics_store VALUES (3, "TV", 2000, 10, "Android");
+INSERT INTO electronics_store VALUES (4, "TV", 1999, 8, "Roku");
+INSERT INTO electronics_store VALUES (5, "Iphone 14", 800, 15, "Apple");
+INSERT INTO electronics_store VALUES (6, "Galaxy S7", 799, 12, "Android");
+INSERT INTO electronics_store VALUES (7, "Iphone Charger", 10, 13, "Apple");
+INSERT INTO electronics_store VALUES (8, "Samsung Charger", 10, 11, "Android");
+INSERT INTO electronics_store VALUES (9, "Laptop", 1200, 12, "Mac");
+INSERT INTO electronics_store VALUES (10, "Laptop", 1000, 11, "Dell");
+INSERT INTO electronics_store VALUES (11, "Laptop", 975, 9, "HP");
+INSERT INTO electronics_store VALUES (12, "Laptop", 1200, 11, "Lenovo");
+INSERT INTO electronics_store VALUES (13, "Tablet", 1700, 7, "Android");
+INSERT INTO electronics_store VALUES (14, "Tablet", 1500, 9, "Apple");
+INSERT INTO electronics_store VALUES (15, "Digital Camera", 300, 5, "Kodak");
+
+SELECT * FROM electronics_store ORDER BY price;
+SELECT SUM(quantity) FROM electronics_store;
+
